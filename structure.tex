@@ -48,6 +48,8 @@
 {\sffamily\;\titlerule*[.5pc]{.}\;\thecontentspage} % Page number
 [] 
 
+\setcounter{page}{-2}
+
 %----------------------------------------------------------------------------------------
 %	MINI TABLE OF CONTENTS IN CHAPTER HEADS
 %----------------------------------------------------------------------------------------
@@ -307,7 +309,7 @@ innerbottommargin=5pt]{cBox}
 \def\thechapter{\arabic{chapter}}
 \def\@makechapterhead#1{
 \thispagestyle{empty}
-{\centering \normalfont\sffamily
+{\normalfont\sffamily
 \ifnum \c@secnumdepth >\m@ne
 \if@mainmatter
 \startcontents
@@ -330,7 +332,7 @@ innerbottommargin=5pt]{cBox}
 % Unnumbered chapters without mini tableofcontents (could be added though) 
 \def\@makeschapterhead#1{
 \thispagestyle{empty}
-{\centering \normalfont\sffamily
+{\normalfont\sffamily
 \ifnum \c@secnumdepth >\m@ne
 \if@mainmatter
 \begin{tikzpicture}[remember picture,overlay]
